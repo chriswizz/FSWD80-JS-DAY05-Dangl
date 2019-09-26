@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Challenge</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div id="containerAll">
+
+		<header id="header">
+
+				<img src="img/heroImage.jpg" alt="" id="heroImage">
+
+				<div id="headerText">
+					<h1>HATS AND<br>HELMETS</h1>
+					<h3>Style and Protect</h3>
+				</div>
+			
+		</header>
+
+
+
+		<div id="topContent">
+
+			<nav id="nav">
+<!-- 				<ul>
+					<li><a href="" title=""></a></li>
+				</ul> -->
+			</nav>
+
+			<div id="cartShort">
+				<div id="clearCartButton">
+					<h4>Clear Cart</h4>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+		<div id="mainContent">
+
+			<div id="productContent">
+
+			</div>
+
+			<div id="cartDetail">
+
+				<div id="cartDetailHeader">
+					<h4>Cart Details</h4>
+				</div>
+
+				<div id="cartDetailContent">
+
+					<div id="cartDetailContentNames">
+						
+					</div>
+					<div id="cartDetailContentPrices">
+						
+					</div>
+
+				</div>
+
+				<div id="showSum">
+					
+				</div>
+
+			</div>
+			
+		</div>
+
+
+
+		<footer id="footer">
+			
+		</footer>
+
+
+
+	</div>
+
+	<script type="text/javascript"  src="data.json"></script>
+
+	<script>
+
+		//create products
+		var i = 0;
+		for (i = 0; i < products.length; i++) {
+		document.getElementById("productContent").innerHTML += 
+			"<div class='singleProduct'>" +
+				"<img class='productImage' src='img/" + products[i].image + "'>" +
+				"<div class='productName'>" + products[i].name + "</div>" +
+				"<div class='buttonAddToCart' id='"+ products[i].uniqueID +"'>Add to cart</div>"
+			"</div>";
+		}
+
+
+		//click on Add to cart
+		var sum = 0;
+
+		function addToCartHatCap() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[0].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[0].price + " €<br>";
+			sum += Number(products[0].price);
+			document.getElementById("showSum").innerHTML = "sum: " + sum + " €";
+			return(sum);
+		}
+		function addToCartHatFedora() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[1].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[1].price + " €<br>";
+		}
+		function addToCartHatFelt() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[2].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[2].price + " €<br>";
+		}
+		function addToCartHatMagic() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[3].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[3].price + " €<br>";
+		}
+		function addToCartHatTop() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[4].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[4].price + " €<br>";
+		}
+		function addToCartHatUncleSam() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[5].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[5].price + " €<br>";
+		}
+		function addToCartHelmetAntique() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[6].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[6].price + " €<br>";
+		}
+		function addToCartHelmetConstruction() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[7].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[7].price + " €<br>";
+		}
+		function addToCartHelmetDiver() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[8].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[8].price + " €<br>";
+		}
+		function addToCartHelmetKnight() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[9].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[9].price + " €<br>";
+		}
+		function addToCartHelmetStarWars() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[10].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[10].price + " €<br>";
+		}
+		function addToCartHelmetViking() {
+			document.getElementById("cartDetailContentNames").innerHTML += products[11].name + "<br>";
+			document.getElementById("cartDetailContentPrices").innerHTML += products[11].price + " €<br>";
+		}
+
+
+		//add event listener when click on add to cart
+		document.getElementById("hat-cap").addEventListener("click", addToCartHatCap);
+		document.getElementById("hat-fedora").addEventListener("click", addToCartHatFedora);
+		document.getElementById("hat-felt").addEventListener("click", addToCartHatFelt);
+		document.getElementById("hat-magic").addEventListener("click", addToCartHatMagic);
+		document.getElementById("hat-top").addEventListener("click", addToCartHatTop);
+		document.getElementById("hat-uncle-sam").addEventListener("click", addToCartHatUncleSam);
+		document.getElementById("helmet-antique").addEventListener("click", addToCartHelmetAntique);
+		document.getElementById("helmet-construction").addEventListener("click", addToCartHelmetConstruction);
+		document.getElementById("helmet-diver").addEventListener("click", addToCartHelmetDiver);
+		document.getElementById("helmet-knight").addEventListener("click", addToCartHelmetKnight);
+		document.getElementById("helmet-star-wars").addEventListener("click", addToCartHelmetStarWars);
+		document.getElementById("helmet-viking").addEventListener("click", addToCartHelmetViking);
+
+		//clear cart
+		function clearCart() {
+			location.reload();
+		}
+
+		document.getElementById("clearCartButton").addEventListener("click", clearCart);
+
+
+		//create table of all products
+		i = 0;
+		document.writeln("<table border='2' id='overviewTableJSON'>");
+		document.writeln("<tr><th>Unique ID</th><th>Category</th><th>Name</th><th>Description</th><th>Price</th><th>Image</th><tr>");
+
+		for (i = 0; i < products.length; i++) {
+			document.writeln("<tr><td>" + products[i].uniqueID + "</td><td>" + products[i].category + "</td><td>" + products[i].name + "</td><td>" + products[i].description + "</td><td>" + products[i].price + "</td><td>" + products[i].image + "</td><tr>");
+		}
+
+	</script>
+
+</body>
+</html>

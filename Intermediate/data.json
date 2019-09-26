@@ -1,0 +1,94 @@
+var json = [
+
+	{
+
+	"uniqueID": "1001",
+	"firstName": "Anton",
+	"lastName": "Amsterdam",
+	"emailAddress": "anton.amsterdam@gmail.com",
+	"jobTitle": "Accountant",
+	"salary": "€ 77,000",
+
+	}, {
+
+	"uniqueID": "1002",
+	"firstName": "Berta",
+	"lastName": "Baltimore",
+	"emailAddress": "berta.baltimore@gmail.com",
+	"jobTitle": "Biologist",
+	"salary": "€ 98,000",
+
+	}, {
+
+	"uniqueID": "1003",
+	"firstName": "Cäsar",
+	"lastName": "Casablanca",
+	"emailAddress": "caesar.casablanca@gmail.com",
+	"jobTitle": "Call Center Agent",
+	"salary": "€ 54,000",
+
+	}, {
+
+	"uniqueID": "1004",
+	"firstName": "Dora",
+	"lastName": "Danemark",
+	"emailAddress": "dora.danemark@gmail.com",
+	"jobTitle": "Data Analyst",
+	"salary": "€ 66,000",
+
+	}, {
+
+	"uniqueID": "1005",
+	"firstName": "Emil",
+	"lastName": "Edison",
+	"emailAddress": "emil.edison@gmail.com",
+	"jobTitle": "Electrician",
+	"salary": "€ 55,000",
+
+	}, {
+
+	"uniqueID": "1006",
+	"firstName": "Friedrich",
+	"lastName": "Florida",
+	"emailAddress": "friedrich.florida@gmail.com",
+	"jobTitle": "Firefighter",
+	"salary": "€ 90,000",
+
+	}, {
+
+	"uniqueID": "1007",
+	"firstName": "Gustav",
+	"lastName": "Gallipoli",
+	"emailAddress": "gustava.gallipoli@gmail.com",
+	"jobTitle": "Games Programmer",
+	"salary": "€ 38,000",
+
+	}, {
+
+	"uniqueID": "1008",
+	"firstName": "Heinrich",
+	"lastName": "Havana",
+	"emailAddress": "heinrich.havana@gmail.com",
+	"jobTitle": "Homeopath",
+	"salary": "€ 99,000",
+
+	}, {
+
+	"uniqueID": "1009",
+	"firstName": "Ida",
+	"lastName": "Italia",
+	"emailAddress": "ida.italia@gmail.com",
+	"jobTitle": "IT Support Engineer",
+	"salary": "€ 88,000",
+
+	}, {
+
+	"uniqueID": "1010",
+	"firstName": "Julius",
+	"lastName": "Jérusalem",
+	"emailAddress": "juliua.jerusalem@gmail.com",
+	"jobTitle": "Journalist",
+	"salary": "€ 21,000",
+
+	}	
+];

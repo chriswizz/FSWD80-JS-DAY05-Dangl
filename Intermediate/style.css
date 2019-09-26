@@ -1,0 +1,7 @@
+#tableEmployees th, td {
+	box-sizing: border-box;
+	line-height: 150%;
+	font-size: 120%;
+	padding: 10px;
+	background: #f2f2f2;
+}

@@ -1,0 +1,112 @@
+var products = [
+
+		{
+
+		"uniqueID": "hat-cap",
+		"category": "hat",
+		"name": "Baseball Cap",
+		"description": "Beautiful red baseball cap.",
+		"price": "9",
+		"image": "hat-cap.png",
+
+		}, {
+
+		"uniqueID": "hat-fedora",
+		"category": "hat",
+		"name": "Fedora Hat",
+		"description": "Stylish, modern, hip!",
+		"price": "12",
+		"image": "hat-fedora.png",
+
+		}, {
+
+		"uniqueID": "hat-felt",
+		"category": "hat",
+		"name": "Felt Hat",
+		"description": "Tradition and quality.",
+		"price": "15",
+		"image": "hat-felt.png",
+
+		}, {
+
+		"uniqueID": "hat-magic",
+		"category": "hat",
+		"name": "Magician Hat",
+		"description": "Be a magician with this magic hat.",
+		"price": "20",
+		"image": "hat-magic.png",
+
+		}, {
+
+		"uniqueID": "hat-top",
+		"category": "hat",
+		"name": "Top Hat",
+		"description": "Be tall with this stylish top hat.",
+		"price": "9",
+		"image": "hat-top.png",
+
+		}, {
+
+		"uniqueID": "hat-uncle-sam",
+		"category": "hat",
+		"name": "Uncle Sam Hat",
+		"description": "Patriots live longer and better.",
+		"price": "19",
+		"image": "hat-uncle-sam.png",
+
+		}, {
+
+		"uniqueID": "helmet-antique",
+		"category": "helmet",
+		"name": "Antique Helmet",
+		"description": "One of the rarest antique helmets in the world.",
+		"price": "35",
+		"image": "helmet-antique.png",
+
+		}, {
+
+		"uniqueID": "helmet-construction",
+		"category": "helmet",
+		"name": "Construction Helmet",
+		"description": "Safety goes first - in every situation!",
+		"price": "5",
+		"image": "helmet-construction.png",
+
+		}, {
+
+		"uniqueID": "helmet-diver",
+		"category": "helmet",
+		"name": "Diver Helmet",
+		"description": "If you sink you better have one.",
+		"price": "29",
+		"image": "helmet-diver.png",
+
+		}, {
+
+		"uniqueID": "helmet-knight",
+		"category": "helmet",
+		"name": "Knight Helmet",
+		"description": "Prepare yourself for the next fight.",
+		"price": "22",
+		"image": "helmet-knight.png",
+
+		}, {
+
+		"uniqueID": "helmet-star-wars",
+		"category": "helmet",
+		"name": "Star Wars Helmet",
+		"description": "Not only for young children - also for adult ones.",
+		"price": "25",
+		"image": "helmet-star-wars.png",
+
+		}, {
+
+		"uniqueID": "helmet-viking",
+		"category": "helmet",
+		"name": "Viking Helmet",
+		"description": "You are never lost when the Vikings are with you.",
+		"price": "20",
+		"image": "helmet-viking.png",
+	}
+
+];
